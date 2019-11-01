@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 65571349}
   - component: {fileID: 65571351}
   - component: {fileID: 65571350}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlataformaArriba
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -239,6 +239,7 @@ GameObject:
   - component: {fileID: 301933824}
   - component: {fileID: 301933823}
   - component: {fileID: 301933822}
+  - component: {fileID: 301933826}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -255,7 +256,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 301933821}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 33e6c862371138a4fbf121be0f1fca1e, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -287,7 +288,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -352,10 +353,31 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.01, y: -1.663, z: 0}
   m_LocalScale: {x: 1.109529, y: 1.092369, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 496018768}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &301933826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301933821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f61bf894662454c8586575eb39c162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 400
+  jumpForce: 20
+  canJump: 0
+  groundCheck: {fileID: 496018768}
+  checkRadius: 0.5
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &454463963
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +389,7 @@ GameObject:
   - component: {fileID: 454463964}
   - component: {fileID: 454463966}
   - component: {fileID: 454463965}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlataformaDerecha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,6 +485,80 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &483342615
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 483342617}
+  - component: {fileID: 483342616}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &483342616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483342615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d34c293645d4ff459d4be1f2601f96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 301933826}
+--- !u!4 &483342617
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483342615}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &496018767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496018768}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496018768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496018767}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.009012833, y: -0.4989, z: 0}
+  m_LocalScale: {x: 0.9012834, y: 0.91544163, z: 1}
+  m_Children: []
+  m_Father: {fileID: 301933825}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,7 +686,7 @@ GameObject:
   - component: {fileID: 1534460938}
   - component: {fileID: 1534460937}
   - component: {fileID: 1534460936}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Suelo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,7 +793,7 @@ GameObject:
   - component: {fileID: 1938044710}
   - component: {fileID: 1938044712}
   - component: {fileID: 1938044711}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlataformaIzquierda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
