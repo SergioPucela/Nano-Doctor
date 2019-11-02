@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed;
     public float jumpForce;
+    public bool faceRight = true;
+    private float moveInput;
 
     private Rigidbody2D rb2D;
 
@@ -22,7 +24,13 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        moveInput = Input.GetAxis("Horizontal");
         canJump = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+
+        if (faceRight == false && moveInput < 0)
+            Flip();
+        else if (faceRight == true && moveInput > 0)
+            Flip();
     }
 
     void Update()
@@ -30,12 +38,18 @@ public class PlayerMovement : MonoBehaviour
         rb2D.velocity = new Vector2(0, rb2D.velocity.y);
     }
 
-    public void Move(bool faceRight)
+    public void Move(bool right)
     {
-        if (faceRight)
+        if (right)
             rb2D.velocity = new Vector2(speed * Time.fixedDeltaTime, rb2D.velocity.y);
         else
             rb2D.velocity = new Vector2(-speed * Time.fixedDeltaTime, rb2D.velocity.y);
+    }
+
+    public void Flip()
+    {
+        faceRight = !faceRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 
     public void Jump()

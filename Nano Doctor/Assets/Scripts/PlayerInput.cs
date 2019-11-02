@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     public PlayerMovement player;
+    public ArmaPrincipal armaPrincipal;
 
     void Update()
     {
@@ -28,5 +29,7 @@ public class PlayerInput : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump") && player.canJump)
             player.Jump();
+        if (Input.GetButtonDown("Fire1"))
+            armaPrincipal.Shoot();
     }
 }
