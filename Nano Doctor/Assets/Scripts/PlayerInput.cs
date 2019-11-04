@@ -6,6 +6,9 @@ public class PlayerInput : MonoBehaviour
 {
     public PlayerMovement player;
     public ArmaPrincipal armaPrincipal;
+    public ArmaLaser armaLaser;
+
+    private bool armaEquipada = true;
 
     void Update()
     {
@@ -27,9 +30,16 @@ public class PlayerInput : MonoBehaviour
 
     void GetInput()
     {
+        if (Input.GetButtonDown("ChangeWeapon"))
+            armaEquipada = !armaEquipada;
         if (Input.GetButtonDown("Jump") && player.canJump)
             player.Jump();
         if (Input.GetButtonDown("Fire1"))
-            armaPrincipal.Shoot();
+        {
+            if (armaEquipada)
+                armaPrincipal.ShootWeapon();
+            else
+                StartCoroutine(armaLaser.ShootLaser());
+        }
     }
 }

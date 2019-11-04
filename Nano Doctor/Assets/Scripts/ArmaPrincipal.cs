@@ -8,7 +8,7 @@ public class ArmaPrincipal : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
 
-    public void Shoot()
+    public void ShootWeapon()
     {
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
