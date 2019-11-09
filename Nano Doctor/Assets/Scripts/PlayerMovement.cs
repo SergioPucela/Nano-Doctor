@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    public GameObject player;
     public float speed;
     public float jumpForce;
     public bool faceRight = true;
@@ -55,5 +55,17 @@ public class PlayerMovement : MonoBehaviour
     public void Jump()
     {
         rb2D.velocity = Vector2.up * jumpForce;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Plataforma") && canJump)
+            player.transform.parent = collision.gameObject.transform;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Plataforma"))
+            player.transform.parent = null;
     }
 }
