@@ -5,6 +5,9 @@ using UnityEngine;
 public class Plataforma : MonoBehaviour
 {
 
+    private PlatformEffector2D effector;
+    public float waitTime;
+
     public Transform pos1, pos2;
     public float speed;
     public Transform startPos;
@@ -15,6 +18,7 @@ public class Plataforma : MonoBehaviour
     void Start()
     {
         nextPos = startPos.position;
+        effector = GetComponent<PlatformEffector2D>();
     }
 
     // Update is called once per frame
