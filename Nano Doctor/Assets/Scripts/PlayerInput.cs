@@ -7,17 +7,20 @@ public class PlayerInput : MonoBehaviour
     public PlayerMovement player;
     public ArmaPrincipal armaPrincipal;
     public ArmaLaser armaLaser;
+    public Dialog NPC;
 
     private bool armaEquipada = true;
 
     void Update()
     {
-        GetInput();
+        if(NPC.enableMove)
+            GetInput();
     }
 
     void FixedUpdate()
     {
-        GetMovementInput();
+        if(NPC.enableMove)
+            GetMovementInput();
     }
 
     void GetMovementInput()
