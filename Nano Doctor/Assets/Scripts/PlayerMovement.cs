@@ -68,4 +68,9 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Plataforma"))
             player.transform.parent = null;
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.gameObject.GetComponent<Dialog>().DialogStart();
+    }
 }

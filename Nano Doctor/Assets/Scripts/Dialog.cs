@@ -10,8 +10,7 @@ public class Dialog : MonoBehaviour
     public string[] sentences;
     private int index;
     public float typingSpeed;
-    private bool canTalk = true; //Para saber si ya has hablado con el NPC
-    public bool enableMove = true; //Para poder habilitar de nuevo los controles del jugador
+    public PlayerInput Input;
 
     public GameObject continueButton;
 
@@ -46,18 +45,16 @@ public class Dialog : MonoBehaviour
             textDisplay.text = "";
 
         if (index >= sentences.Length - 1 && textDisplay.text == "")
-            enableMove = true;
+        {
+            Input.enabled = true;
+            Destroy(gameObject);
+        }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void DialogStart()
     {
-        if (canTalk)
-            if (collision.gameObject.name == "Jugador")
-            {
-                canTalk = false;
-                enableMove = false;
-                StartCoroutine(Type());
-            }
+        Input.enabled = false;
+        StartCoroutine(Type());
     }
 
 }
