@@ -1545,13 +1545,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 178a4099abb62764182a4fb17f4e9af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDisplay: {fileID: 989680930}
+  textDisplay: {fileID: 1509178856}
   sentences:
   - 'Flor: Hola, soy la flor'
   - "Flor: Ya est\xE1. Puedes continuar"
   typingSpeed: 0.02
   Input: {fileID: 483342616}
-  continueButton: {fileID: 326891116}
+  continueButton: {fileID: 1786750851}
 --- !u!61 &173422314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1611,7 +1611,7 @@ Transform:
   m_LocalScale: {x: 1, y: 9.663604, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &192281216
 PrefabInstance:
@@ -2740,12 +2740,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aa1201fc65124643944b57e5780ae8d, type: 3}
---- !u!1 &326891116 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2065783760671498906, guid: 4d206c4862694fb45bfe0d917e7c753c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1849569242}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &342226628
 GameObject:
   m_ObjectHideFlags: 0
@@ -6127,18 +6121,6 @@ MonoBehaviour:
   m_Length: 0.15075478
   m_ChildTransform: {fileID: 1674047120}
   m_AttachedIK: {fileID: 0}
---- !u!114 &989680930 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2065783760615865384, guid: 4d206c4862694fb45bfe0d917e7c753c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1849569242}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1007748860
 GameObject:
   m_ObjectHideFlags: 0
@@ -9639,6 +9621,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1509178856 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2139990029111048952, guid: 4d206c4862694fb45bfe0d917e7c753c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1849569242}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1509838120
 GameObject:
   m_ObjectHideFlags: 0
@@ -10374,6 +10368,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4799000299818606765, guid: b7f68e47f6649d143a2e52a8f081085f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7f68e47f6649d143a2e52a8f081085f, type: 3}
@@ -11680,6 +11679,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1786750851 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2139990029107569738, guid: 4d206c4862694fb45bfe0d917e7c753c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1849569242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1796498449
 GameObject:
   m_ObjectHideFlags: 0
@@ -11989,6 +11994,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2065783760671498916, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 173422313}
+    - target: {fileID: 2065783760671498916, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextSentence
+      objectReference: {fileID: 0}
     - target: {fileID: 2065783760671498919, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -12009,12 +12024,22 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2065783760671498916, guid: 4d206c4862694fb45bfe0d917e7c753c,
+    - target: {fileID: 2139990027974238308, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2139990029107569780, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_margin.x
+      value: -0.07172203
+      objectReference: {fileID: 0}
+    - target: {fileID: 2139990029107569781, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 173422313}
-    - target: {fileID: 2065783760671498916, guid: 4d206c4862694fb45bfe0d917e7c753c,
+    - target: {fileID: 2139990029107569781, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: NextSentence
