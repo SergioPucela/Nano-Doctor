@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 4767
+  controlID: 35115
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 494}
   m_MaxSize: {x: 10002, y: 14044}
   vertical: 1
-  controlID: 4831
+  controlID: 35094
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 344}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 4768
+  controlID: 35116
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -408,10 +408,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 88360000
+      scrollPos: {x: 0, y: 92}
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 24e5ffff4aeeffff26f6ffff9afaffff54fbffff
+      m_ExpandedIDs: 006effff666effff2870ffffbc70ffff8e72ffff68c8ffffd0caffffbcf3ffffd6f5ffff524700006cb00000c0e80000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -480,14 +480,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scenes
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: C:\Users\Administrador\Documents\GitHub\Nano-Doctor\Nano Doctor
+  m_LastProjectPath: C:\Users\seycr\Documents\GitHub\Nano-Doctor\Nano Doctor
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 24370000
-    m_LastClickedID: 14116
-    m_ExpandedIDs: 00000000263000001e310000bc33000000ca9a3b
+    m_SelectedIDs: f8400000
+    m_LastClickedID: 16632
+    m_ExpandedIDs: 000000000a3b0000e43b00002e3e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -515,7 +515,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000263000001e310000bc33000000ca9a3b
+    m_ExpandedIDs: 000000000a3b0000e43b00002e3e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -607,9 +607,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.8242725, y: 3.803422, z: -27.662788}
+    m_Target: {x: 312.5252, y: 42.548676, z: -273.4375}
     speed: 2
-    m_Value: {x: -1.2075175, y: 4.0906205, z: -27.517717}
+    m_Value: {x: 312.5252, y: 42.548676, z: -273.4375}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -642,9 +642,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 38.418304
+    m_Target: 210.02538
     speed: 2
-    m_Value: 40.228592
+    m_Value: 200.98122
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -4818
+  m_LastSelectedObjectID: 45216
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -788,4 +788,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 720
+  m_LastVerticalScrollValue: 0
