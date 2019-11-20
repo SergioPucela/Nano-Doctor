@@ -14,7 +14,12 @@ public class MenuPrincipal : MonoBehaviour
 
     public void goToTestScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("TestScene");
+    }
+
+    public void goToLevelOne()
+    {
+        SceneManager.LoadScene("Nivel1");
     }
 
 }

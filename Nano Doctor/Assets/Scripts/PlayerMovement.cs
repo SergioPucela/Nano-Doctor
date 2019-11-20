@@ -71,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.gameObject.GetComponent<Dialog>().DialogStart();
+        if (collision.gameObject.CompareTag("Trigger"))
+            collision.gameObject.GetComponent<Dialog>().DialogStart();
     }
 }
