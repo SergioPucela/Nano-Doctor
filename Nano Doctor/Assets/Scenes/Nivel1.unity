@@ -1968,6 +1968,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6836025098583381039, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6836025099014103376, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2078,10 +2083,15 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 483342616}
-    - target: {fileID: 6836025098583381039, guid: 4d206c4862694fb45bfe0d917e7c753c,
+    - target: {fileID: 6836025098583381008, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 173422313}
+    - target: {fileID: 6836025098583381008, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: NextSentence
       objectReference: {fileID: 0}
     - target: {fileID: 6836025098583381009, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
