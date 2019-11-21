@@ -46,6 +46,11 @@ public class Dialog : MonoBehaviour
 
         if (index >= sentences.Length - 1 && textDisplay.text == "")
         {
+            foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("EnemyAI"))
+            {
+                EnemigoVolador AI = enemy.GetComponent<EnemigoVolador>();
+                AI.enemyView = 15f;
+            }
             Input.enabled = true;
             Destroy(gameObject);
         }
@@ -53,6 +58,11 @@ public class Dialog : MonoBehaviour
 
     public void DialogStart()
     {
+        foreach(GameObject enemy in GameObject.FindGameObjectsWithTag("EnemyAI"))
+        {
+            EnemigoVolador AI = enemy.GetComponent<EnemigoVolador>();
+            AI.enemyView = 0.01f;
+        }
         Input.enabled = false;
         StartCoroutine(Type());
     }
