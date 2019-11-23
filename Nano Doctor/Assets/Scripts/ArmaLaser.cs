@@ -12,9 +12,9 @@ public class ArmaLaser : MonoBehaviour
 
     public IEnumerator ShootLaser()
     {
-        if(cargador >= 2) //Si hay suficientes nanomateriales en el cargador del láser, en este caso he puesto 2 unidades
+        if (cargador >= 1) //Si hay suficientes nanomateriales en el cargador del láser, en este caso he puesto 2 unidades
         {
-            cargador -= 2; //El laser pierde esa cantidad de nanomateriales 
+            cargador -= 1; //El laser pierde esa cantidad de nanomateriales 
 
             RaycastHit2D collisionInfo = Physics2D.Raycast(firePoint.position, firePoint.right);
 

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    public int health;
+
     public GameObject player;
     public float speed;
     public float jumpForce;
@@ -73,5 +76,27 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trigger"))
             collision.gameObject.GetComponent<Dialog>().DialogStart();
+
+        if (collision.gameObject.CompareTag("NanoTank"))
+        {
+            TanqueNano nano = collision.GetComponent<TanqueNano>();
+            nano.Cargar();
+        }
+    }
+
+    public void RecibirDaño(int damage)
+    {
+        health -= damage;
+
+        if(health <= 0)
+        {
+            Die();
+        }
+    }
+
+    void Die()
+    {
+        //Aquí puedo poner el efecto de muerte
+        Debug.Log("Has muerto");
     }
 }

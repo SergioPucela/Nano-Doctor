@@ -8,14 +8,14 @@ public class TanqueNano : MonoBehaviour
     public int carga;
 
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
-        carga = Random.Range(0, 7);
-    }
+        carga = Random.Range(1, 5);
+    }*/
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void Cargar()
     {
-        if (collision.gameObject.name == "Jugador")
+        if(player.cargador < 4)
         {
             player.cargador += carga;
             Destroy(gameObject);

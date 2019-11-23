@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rb.velocity = transform.right * bulletSpeed;
+        Physics2D.IgnoreLayerCollision(10, 11);
     }
 
     void OnTriggerEnter2D(Collider2D collisionInfo)
