@@ -13,12 +13,16 @@ public class PlayerMovement : MonoBehaviour
     public bool faceRight = true;
     private float moveInput;
 
+    private GameObject trigger;
+
     private Rigidbody2D rb2D;
 
     public bool canJump;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
+
+    public Dialog myDialog;
 
     void Awake()
     {
@@ -39,6 +43,9 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         rb2D.velocity = new Vector2(0, rb2D.velocity.y);
+
+        if (myDialog.dialogEnd)
+            Destroy(trigger);
     }
 
     public void Move(bool right)
@@ -75,7 +82,12 @@ public class PlayerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Trigger"))
-            collision.gameObject.GetComponent<Dialog>().DialogStart();
+        {
+            trigger = collision.gameObject;
+            TextosDialogo myText = collision.gameObject.GetComponent<TextosDialogo>();
+            myDialog.sentences = myText.sentences;
+            myDialog.DialogStart();
+        }
 
         if (collision.gameObject.CompareTag("NanoTank"))
         {

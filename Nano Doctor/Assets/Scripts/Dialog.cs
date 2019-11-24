@@ -8,9 +8,11 @@ public class Dialog : MonoBehaviour
 
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
-    private int index;
+    public int index;
     public float typingSpeed;
     public PlayerInput Input;
+
+    public bool dialogEnd = false;
 
     public GameObject continueButton;
 
@@ -52,12 +54,14 @@ public class Dialog : MonoBehaviour
                 AI.enemyView = 15f;
             }
             Input.enabled = true;
-            Destroy(gameObject);
+            index = 0;
+            dialogEnd = true;
         }
     }
 
     public void DialogStart()
     {
+        dialogEnd = false;
         foreach(GameObject enemy in GameObject.FindGameObjectsWithTag("EnemyAI"))
         {
             EnemigoVolador AI = enemy.GetComponent<EnemigoVolador>();
