@@ -274,6 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &31771618
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -432,7 +433,7 @@ GameObject:
   - component: {fileID: 54212961}
   m_Layer: 0
   m_Name: Tanque nanomateriales (8)
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -464,7 +465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &54212962
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -475,7 +476,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -499,7 +500,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54212959}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1301,7 +1302,7 @@ GameObject:
   - component: {fileID: 153136350}
   m_Layer: 0
   m_Name: Tanque nanomateriales (3)
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1333,7 +1334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &153136351
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1344,7 +1345,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1368,7 +1369,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153136348}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1445,7 +1446,7 @@ GameObject:
   - component: {fileID: 159024706}
   m_Layer: 0
   m_Name: Tanque nanomateriales (1)
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1477,7 +1478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &159024707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1488,7 +1489,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1512,7 +1513,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159024704}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1722,16 +1723,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 173422312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 178a4099abb62764182a4fb17f4e9af2, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e2bb1293e8998543bfe35d092f998bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textDisplay: {fileID: 1691096770}
   sentences:
-  - 'Flor: Hola, soy la flor'
-  - "Flor: Ya est\xE1. Puedes continuar"
-  typingSpeed: 0.02
-  Input: {fileID: 483342616}
-  continueButton: {fileID: 1018104098}
+  - "Flor: \xA1Ayudaaaa!"
+  - "Flor: \xA1Un gran incendio est\xE1 arrasando con el bosque!"
+  - "Flor: Ay\xFAdanos a ponerle fin a este incendio, por favor."
 --- !u!61 &173422314
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2160,7 +2158,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 173422313}
+      objectReference: {fileID: 0}
     - target: {fileID: 6836025098583381008, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2235,6 +2233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &248488988
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2721,9 +2720,10 @@ GameObject:
   - component: {fileID: 301933826}
   - component: {fileID: 301933827}
   - component: {fileID: 301933828}
+  - component: {fileID: 301933829}
   m_Layer: 0
   m_Name: Jugador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2853,7 +2853,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2f61bf894662454c8586575eb39c162, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  health: 3
+  player: {fileID: 301933821}
   speed: 350
   jumpForce: 20
   faceRight: 0
@@ -2863,6 +2864,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  myDialog: {fileID: 301933829}
 --- !u!114 &301933827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2876,7 +2878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 1737236968}
-  bulletPrefab: {fileID: 7677210724070603847, guid: 206d168c579c4a54a9b843e8e42a9608,
+  bulletPrefab: {fileID: 6043845861490727408, guid: 206d168c579c4a54a9b843e8e42a9608,
     type: 3}
 --- !u!114 &301933828
 MonoBehaviour:
@@ -2894,6 +2896,26 @@ MonoBehaviour:
   lineRenderer: {fileID: 634874683}
   damage: 10
   cargador: 0
+--- !u!114 &301933829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301933821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178a4099abb62764182a4fb17f4e9af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 1691096770}
+  sentences:
+  - '-'
+  index: 0
+  typingSpeed: 0.02
+  Input: {fileID: 483342616}
+  dialogEnd: 0
+  continueButton: {fileID: 1018104098}
 --- !u!1001 &308378139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3217,7 +3239,7 @@ GameObject:
   - component: {fileID: 342226630}
   m_Layer: 0
   m_Name: Tanque nanomateriales (6)
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3249,7 +3271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &342226631
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3260,7 +3282,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3284,7 +3306,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342226628}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -3393,6 +3415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &368006131
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3542,6 +3565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &381334064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6136,6 +6160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &890446414
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6253,7 +6278,7 @@ GameObject:
   - component: {fileID: 924803895}
   m_Layer: 0
   m_Name: Tanque nanomateriales (7)
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6285,7 +6310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &924803896
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6296,7 +6321,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6320,7 +6345,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 924803893}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6700,7 +6725,7 @@ GameObject:
   - component: {fileID: 1007748861}
   m_Layer: 0
   m_Name: Tanque nanomateriales
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6718,7 +6743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &1007748862
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6729,7 +6754,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6753,7 +6778,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007748860}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -6957,7 +6982,7 @@ GameObject:
   - component: {fileID: 1024902680}
   m_Layer: 0
   m_Name: Tanque nanomateriales (5)
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6989,7 +7014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &1024902681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7000,7 +7025,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -7024,7 +7049,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024902678}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -7194,6 +7219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1042681650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7758,6 +7784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1133741426
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7976,6 +8003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1161433794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8424,6 +8452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1206603499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8567,6 +8596,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1242549198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8725,7 +8755,7 @@ GameObject:
   - component: {fileID: 1275309357}
   m_Layer: 0
   m_Name: Tanque nanomateriales (4)
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8757,7 +8787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &1275309358
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8768,7 +8798,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8792,7 +8822,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1275309355}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -9341,6 +9371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1342257270
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9484,6 +9515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1357576299
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10151,6 +10183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1461766728
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10346,6 +10379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1509838123
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10797,6 +10831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1562672094
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11706,6 +11741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1745252000
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12154,7 +12190,7 @@ GameObject:
   - component: {fileID: 1773181473}
   m_Layer: 0
   m_Name: Tanque nanomateriales (2)
-  m_TagString: Untagged
+  m_TagString: NanoTank
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12186,7 +12222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 301933828}
-  carga: 0
+  carga: 1
 --- !u!61 &1773181474
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12197,7 +12233,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -12221,7 +12257,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773181471}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -12708,6 +12744,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1864478746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13286,6 +13323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  enemyDamage: 1
 --- !u!61 &1941901438
 BoxCollider2D:
   m_ObjectHideFlags: 0
