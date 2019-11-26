@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: 4d0c2ccc32d01204fa254f74eafd0ec3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 34176633463909284
+    second: PISTOLA_1
+  - first:
+      213: -769730042193632493
+    second: PISTOLA_2
+  - first:
+      213: -3399443229022438013
+    second: PISTOLA_3
+  - first:
+      213: -7519396232794755846
+    second: PISTOLA_4
+  - first:
+      213: -7188926479872599917
+    second: PISTOLA_DISPARO_1
+  - first:
+      213: 6395478318479329151
+    second: PISTOLA_DISPARO_2
+  - first:
+      213: 5145287391068542324
+    second: PISTOLA_DISPARO_3
+  - first:
+      213: -3559051488473946549
+    second: PISTOLA_DISPARO_4
+  - first:
+      213: -5047548647953496363
+    second: LASER_1
+  - first:
+      213: -8975900929008855310
+    second: LASER_2
+  - first:
+      213: 1012121309329254391
+    second: LASER_3
+  - first:
+      213: -8201937812318642385
+    second: LASER_4
+  - first:
+      213: -3970725419098298006
+    second: LASER_DISPARO_1
+  - first:
+      213: 4665155180416164727
+    second: LASER_DISPARO_2
+  - first:
+      213: -6357872321224704345
+    second: LASER_DISPARO_3
+  - first:
+      213: 6478214663697636064
+    second: LASER_DISPARO_4
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PISTOLA_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2010.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e822e0fd25d995a488f0da00770118bf
+      internalID: 34176633463909284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PISTOLA_2
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 2010.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68123aa8b2752242bd31557e09ce84e
+      internalID: -769730042193632493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PISTOLA_3
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 2010.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d110b17d7c42b418a5a22db3d823d4
+      internalID: -3399443229022438013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PISTOLA_4
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 2010.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205bb5cc02f8d804ca136240e1d334bc
+      internalID: -7519396232794755846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PISTOLA_DISPARO_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1340.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fe6bcaa2cfb23a429c4669362684ee7
+      internalID: -7188926479872599917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PISTOLA_DISPARO_2
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 1340.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa3639b63f3d0646b50c7febe83ab5b
+      internalID: 6395478318479329151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PISTOLA_DISPARO_3
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 1340.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d45bc32f8bdc6bb489c85722cc37ce4c
+      internalID: 5145287391068542324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PISTOLA_DISPARO_4
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 1347
+        width: 961
+        height: 670
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b140256341e82f545badb0568ea08f82
+      internalID: -3559051488473946549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LASER_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 670.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1731490c6e6331648b3cfd652951c4e2
+      internalID: -5047548647953496363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LASER_2
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 670.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5904958b06225b4394ae0659243410b
+      internalID: -8975900929008855310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LASER_3
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 670.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3802996db05276940980c228f6826225
+      internalID: 1012121309329254391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LASER_4
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 670.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbd15e527c261e488dcf14e8cc64f03
+      internalID: -8201937812318642385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LASER_DISPARO_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0241157d3095dec408fcb57320787612
+      internalID: -3970725419098298006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LASER_DISPARO_2
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 0.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49fc3c5f3240ced4bbf2efeea6564816
+      internalID: 4665155180416164727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LASER_DISPARO_3
+      rect:
+        serializedVersion: 2
+        x: 1922
+        y: 0.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0467e71867ffa34293133fff2929eeb
+      internalID: -6357872321224704345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LASER_DISPARO_4
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 0.75
+        width: 961
+        height: 670.25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a1a1aa1bf2f5f49a5ab18593df9694
+      internalID: 6478214663697636064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
