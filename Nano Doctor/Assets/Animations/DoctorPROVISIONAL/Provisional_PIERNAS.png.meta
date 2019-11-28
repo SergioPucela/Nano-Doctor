@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: 0538712ef1923e847847ab43de13e4ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 142593416876480665
+    second: Provisional_PIERNAS_0
+  - first:
+      213: -5598763198200882903
+    second: BATA_SALTAR
+  - first:
+      213: -6899795845865678528
+    second: BATA_CAER
+  - first:
+      213: -3402252052510662399
+    second: DERECHA_SUPERIOR
+  - first:
+      213: -2459072129719282013
+    second: IZQUIERDA_SUPERIOR
+  - first:
+      213: 3349390752180909228
+    second: BATA_IDLE
+  - first:
+      213: 7815097326324218414
+    second: PELVIS
+  - first:
+      213: -8537533065642412471
+    second: Provisional_PIERNAS_7
+  - first:
+      213: 1793629580886624584
+    second: DERECHA_INFERIOR
+  - first:
+      213: -7050568724223068333
+    second: Provisional_PIERNAS_9
+  - first:
+      213: -1975592224933492729
+    second: BATA_CORRER
+  - first:
+      213: -6802342573036923834
+    second: IZQUIERDA_INFERIOR
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BATA_SALTAR
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 744
+        width: 428
+        height: 670
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb5376633106c64ea161b2aca2d2dd7
+      internalID: -5598763198200882903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BATA_CAER
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 1098
+        width: 971
+        height: 358
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed010a6c46615b458fede5b8cf628b6
+      internalID: -6899795845865678528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DERECHA_SUPERIOR
+      rect:
+        serializedVersion: 2
+        x: 1761
+        y: 796
+        width: 189
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769d0db703d1867419adbd1c664ed4eb
+      internalID: -3402252052510662399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IZQUIERDA_SUPERIOR
+      rect:
+        serializedVersion: 2
+        x: 2134
+        y: 808
+        width: 189
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f4af5833f1f5a4eb025de15c3f911f
+      internalID: -2459072129719282013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BATA_IDLE
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 244
+        width: 487
+        height: 603
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35e25acdceee0c42bcffa4f282d6b0a
+      internalID: 3349390752180909228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PELVIS
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 673
+        width: 269
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58768e9339d39d4fbe77573c0322e56
+      internalID: 7815097326324218414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DERECHA_INFERIOR
+      rect:
+        serializedVersion: 2
+        x: 1753
+        y: 193
+        width: 314
+        height: 604
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13409cd61f4506a468eaabca64695117
+      internalID: 1793629580886624584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BATA_CORRER
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 608
+        height: 610
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae4093896ea80d4dae49c7d0c49735b
+      internalID: -1975592224933492729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IZQUIERDA_INFERIOR
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 191
+        width: 314
+        height: 597
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ff4956eca3c8343b906b69b53750b2
+      internalID: -6802342573036923834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
