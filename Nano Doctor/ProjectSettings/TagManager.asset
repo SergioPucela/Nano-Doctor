@@ -8,6 +8,7 @@ TagManager:
   - Trigger
   - EnemyAI
   - NanoTank
+  - SideAttack
   layers:
   - Default
   - TransparentFX

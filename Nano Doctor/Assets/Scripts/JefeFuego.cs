@@ -10,6 +10,9 @@ public class JefeFuego : MonoBehaviour
 
     public GameObject proyectil;
 
+    //public GameObject rightAttack;
+    //public GameObject leftAttack;
+
 
     // Start is called before the first frame update
     void Start()
