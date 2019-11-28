@@ -61,6 +61,7 @@ public class Dialog : MonoBehaviour
 
     public void DialogStart()
     {
+        dialogEnd = false;
         foreach(GameObject enemy in GameObject.FindGameObjectsWithTag("EnemyAI"))
         {
             EnemigoVolador AI = enemy.GetComponent<EnemigoVolador>();

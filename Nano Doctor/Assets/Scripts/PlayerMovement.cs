@@ -45,10 +45,7 @@ public class PlayerMovement : MonoBehaviour
         rb2D.velocity = new Vector2(0, rb2D.velocity.y);
 
         if (myDialog.dialogEnd)
-        {
             Destroy(trigger);
-            myDialog.dialogEnd = false;
-        }
     }
 
     public void Move(bool right)
@@ -96,11 +93,6 @@ public class PlayerMovement : MonoBehaviour
         {
             TanqueNano nano = collision.GetComponent<TanqueNano>();
             nano.Cargar();
-        }
-
-        if (collision.gameObject.CompareTag("SideAttack"))
-        {
-            health = 0;
         }
     }
 
