@@ -7,12 +7,14 @@ public class PlayerInput : MonoBehaviour
     public PlayerMovement player;
     public ArmaPrincipal armaPrincipal;
     public ArmaLaser armaLaser;
+    public Animator animator;
 
-    private bool armaEquipada = true;
+    public bool armaEquipada = true;
 
     void Update()
     {
         GetInput();
+        animator.SetBool("changeWeapon", armaEquipada);
     }
 
     void FixedUpdate()
@@ -37,7 +39,7 @@ public class PlayerInput : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             if (armaEquipada)
-                armaPrincipal.ShootWeapon();
+                StartCoroutine(armaPrincipal.ShootWeapon());
             else
                 StartCoroutine(armaLaser.ShootLaser());
         }

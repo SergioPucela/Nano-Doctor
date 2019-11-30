@@ -9,6 +9,13 @@ public class ArmaLaser : MonoBehaviour
     public LineRenderer lineRenderer;
     public int damage = 10;
     public int cargador = 0;
+    private bool shooting = false;
+    public Animator animator;
+
+    void Update()
+    {
+        animator.SetBool("isShootingLaser", shooting);
+    }
 
     public IEnumerator ShootLaser()
     {
@@ -38,10 +45,14 @@ public class ArmaLaser : MonoBehaviour
                 lineRenderer.SetPosition(1, firePoint.position + firePoint.right * 100);
             }
 
+            //Inicio la animación de disparo láser
+            shooting = true;
             //Renderizar láser
             lineRenderer.enabled = true;
             //Esperar un frame
             yield return new WaitForSeconds(0.02f);
+            //Desactivo la animación de disparo láser
+            shooting = false;
             //Quitar renderizado
             lineRenderer.enabled = false;
         }

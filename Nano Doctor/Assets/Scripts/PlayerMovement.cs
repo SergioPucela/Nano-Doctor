@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     private float moveInput;
 
     private GameObject trigger;
+    public Dialog myDialog;
+    private bool dialogHasStarted = false;
 
     private Rigidbody2D rb2D;
 
@@ -22,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
 
-    public Dialog myDialog;
+    public Animator animator;
 
     void Awake()
     {
@@ -31,8 +33,14 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        moveInput = Input.GetAxis("Horizontal");
+        if (dialogHasStarted)
+            moveInput = 0;
+        else
+            moveInput = Input.GetAxis("Horizontal");
+
+        animator.SetFloat("PlayerSpeed", Mathf.Abs(moveInput));
         canJump = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+        animator.SetBool("isJumping", !canJump);
 
         if (faceRight == false && moveInput < 0)
             Flip();
@@ -45,7 +53,11 @@ public class PlayerMovement : MonoBehaviour
         rb2D.velocity = new Vector2(0, rb2D.velocity.y);
 
         if (myDialog.dialogEnd)
+        {
             Destroy(trigger);
+            myDialog.dialogEnd = false;
+            dialogHasStarted = false;
+        }
     }
 
     public void Move(bool right)
@@ -83,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Trigger"))
         {
+            dialogHasStarted = true;
             trigger = collision.gameObject;
             TextosDialogo myText = collision.gameObject.GetComponent<TextosDialogo>();
             myDialog.sentences = myText.sentences;
