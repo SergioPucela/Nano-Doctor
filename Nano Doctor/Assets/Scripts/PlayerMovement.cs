@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsGround;
 
     public Animator animator;
+    private bool falling;
+    private bool jumping = false;
 
     void Awake()
     {
@@ -37,10 +39,28 @@ public class PlayerMovement : MonoBehaviour
             moveInput = 0;
         else
             moveInput = Input.GetAxis("Horizontal");
-
         animator.SetFloat("PlayerSpeed", Mathf.Abs(moveInput));
+
         canJump = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-        animator.SetBool("isJumping", !canJump);
+
+        if (canJump)
+        {
+            falling = false;
+            jumping = false;
+        }
+        else if (rb2D.velocity.y < 0 && !canJump)
+        {
+            falling = true;
+            jumping = false;
+        }
+        else if(rb2D.velocity.y > 0 && !canJump)
+        {
+            falling = false;
+            jumping = true;
+        }
+        animator.SetBool("isFalling", falling);
+        animator.SetBool("isJumping", jumping);
+
 
         if (faceRight == false && moveInput < 0)
             Flip();
