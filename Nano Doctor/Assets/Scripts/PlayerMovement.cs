@@ -90,16 +90,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void Flip()
     {
-        if (!faceRight)
-        {
-            faceRight = true;
-            transform.eulerAngles = new Vector3(0f, -180f, 0f);
-        }
-        else
-        {
-            faceRight = false;
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
-        }
+        faceRight = !faceRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 
     public void Jump()
