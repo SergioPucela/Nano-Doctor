@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemigoVolador : Enemigo
 {
 
-    public GameObject enemy;
+    public Transform enemy;
     public GameObject player;
     public EnemyAI AI;
     public float enemyView;
@@ -13,15 +13,16 @@ public class EnemigoVolador : Enemigo
     // Start is called before the first frame update
     void Start()
     {
+        enemy = GetComponent<Transform>();
         AI = GetComponent<EnemyAI>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(enemy.transform.position, player.transform.position) <= enemyView)
+        if (Vector2.Distance(enemy.position, player.transform.position) <= enemyView)
             AI.enabled = true;
-        else if (Vector2.Distance(enemy.transform.position, player.transform.position) > enemyView)
+        else if (Vector2.Distance(enemy.position, player.transform.position) > enemyView)
             AI.enabled = false;
     }
 }

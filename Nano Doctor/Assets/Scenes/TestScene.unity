@@ -1467,7 +1467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &426300375
 Transform:
   m_ObjectHideFlags: 0
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd145954a657b694b8a82f0f71ff70a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1047190400}
   speed: 400
   nextWaypointDistance: 3
   enemyGFX: {fileID: 426300375}
@@ -1540,8 +1540,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   enemyDamage: 1
-  enemy: {fileID: 426300374}
-  player: {fileID: 0}
+  enemy: {fileID: 0}
+  player: {fileID: 1020403648}
   AI: {fileID: 0}
   enemyView: 15
 --- !u!61 &426300379
@@ -3061,6 +3061,12 @@ Transform:
   m_Father: {fileID: 1383086886}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1020403648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2201621942068697459, guid: e9072cb52315cf945ba9e8314146d840,
+    type: 3}
+  m_PrefabInstance: {fileID: 508597870}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1042681648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,7 +3217,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 508597870}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1020403648}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 178a4099abb62764182a4fb17f4e9af2, type: 3}
@@ -3223,7 +3229,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 508597870}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1020403648}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a03bb8cc7450203458a66ac16b7100f8, type: 3}
@@ -3241,7 +3247,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 508597870}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1020403648}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7134dc835ec9744484d09cfa2f952b5, type: 3}
@@ -3253,7 +3259,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 508597870}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1020403648}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2f61bf894662454c8586575eb39c162, type: 3}
@@ -3904,7 +3910,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1750078928
 Transform:
   m_ObjectHideFlags: 0
@@ -3931,7 +3937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd145954a657b694b8a82f0f71ff70a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 1047190400}
   speed: 400
   nextWaypointDistance: 3
   enemyGFX: {fileID: 1750078928}
@@ -3977,8 +3983,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   enemyDamage: 1
-  enemy: {fileID: 1750078927}
-  player: {fileID: 0}
+  enemy: {fileID: 0}
+  player: {fileID: 1020403648}
   AI: {fileID: 0}
   enemyView: 15
 --- !u!61 &1750078932
