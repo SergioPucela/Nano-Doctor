@@ -29,7 +29,7 @@ public class Enemigo : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerMovement>().RecibirDaño(enemyDamage);
-            Destroy(gameObject);
+            Die();
         }
     }
 }

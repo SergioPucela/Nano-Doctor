@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
     private bool falling;
-    private bool jumping = false;
+    private bool jumping;
 
     void Awake()
     {
@@ -90,8 +90,16 @@ public class PlayerMovement : MonoBehaviour
 
     public void Flip()
     {
-        faceRight = !faceRight;
-        transform.Rotate(0f, 180f, 0f);
+        if (!faceRight)
+        {
+            faceRight = true;
+            transform.eulerAngles = new Vector3(0f, -180f, 0f);
+        }
+        else
+        {
+            faceRight = false;
+            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+        }
     }
 
     public void Jump()
@@ -126,6 +134,11 @@ public class PlayerMovement : MonoBehaviour
         {
             TanqueNano nano = collision.GetComponent<TanqueNano>();
             nano.Cargar();
+        }
+
+        if (collision.gameObject.CompareTag("SideAttack"))
+        {
+            RecibirDaño(3);
         }
     }
 
