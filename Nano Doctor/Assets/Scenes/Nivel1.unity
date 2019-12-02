@@ -12687,6 +12687,12 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 458915514}
+    - target: {fileID: 5358764206056648314, guid: e9072cb52315cf945ba9e8314146d840,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4133761374183953230, guid: 206d168c579c4a54a9b843e8e42a9608,
+        type: 3}
     - target: {fileID: 5358764205402873335, guid: e9072cb52315cf945ba9e8314146d840,
         type: 3}
       propertyPath: m_LocalPosition.z

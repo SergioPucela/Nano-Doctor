@@ -361,6 +361,12 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1269989212}
+    - target: {fileID: 5358764206056648314, guid: e9072cb52315cf945ba9e8314146d840,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4133761374183953230, guid: 206d168c579c4a54a9b843e8e42a9608,
+        type: 3}
     - target: {fileID: 5358764205402873335, guid: e9072cb52315cf945ba9e8314146d840,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1774,11 +1780,6 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836025098273108128, guid: 4d206c4862694fb45bfe0d917e7c753c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6836025097824789463, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1858,6 +1859,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: a8cb0c3edf3d10247b739302b103a7e6,
         type: 3}
+    - target: {fileID: 6836025098273108128, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d206c4862694fb45bfe0d917e7c753c, type: 3}
 --- !u!1 &1737236967
