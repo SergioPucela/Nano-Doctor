@@ -2184,6 +2184,85 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6836025097824789463, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025097824789465, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1a0aa871abfc56a46b7065c3832d0b8a,
+        type: 3}
+    - target: {fileID: 6836025097824789465, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025097824789465, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025097824789465, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025097824789465, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025097824789464, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025097824789464, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d62fed94a6ed4374499c00b8465cabee,
+        type: 3}
+    - target: {fileID: 6836025098323190785, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025098323190785, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025098323190785, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025098323190785, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7b567b70e788eea42882e51f90f978f6,
+        type: 3}
+    - target: {fileID: 6836025098323190785, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025098323190784, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_Transition
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836025098323190784, guid: 4d206c4862694fb45bfe0d917e7c753c,
+        type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a8cb0c3edf3d10247b739302b103a7e6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d206c4862694fb45bfe0d917e7c753c, type: 3}
 --- !u!1 &248488985
@@ -2858,13 +2937,14 @@ MonoBehaviour:
   speed: 350
   jumpForce: 20
   faceRight: 0
+  myDialog: {fileID: 301933829}
   canJump: 0
   groundCheck: {fileID: 496018768}
   checkRadius: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  myDialog: {fileID: 301933829}
+  animator: {fileID: 0}
 --- !u!114 &301933827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2880,6 +2960,7 @@ MonoBehaviour:
   firePoint: {fileID: 1737236968}
   bulletPrefab: {fileID: 6043845861490727408, guid: 206d168c579c4a54a9b843e8e42a9608,
     type: 3}
+  animator: {fileID: 0}
 --- !u!114 &301933828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2896,6 +2977,7 @@ MonoBehaviour:
   lineRenderer: {fileID: 634874683}
   damage: 10
   cargador: 0
+  animator: {fileID: 0}
 --- !u!114 &301933829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4479,6 +4561,8 @@ MonoBehaviour:
   player: {fileID: 301933826}
   armaPrincipal: {fileID: 301933827}
   armaLaser: {fileID: 301933828}
+  animator: {fileID: 0}
+  armaEquipada: 1
 --- !u!4 &483342617
 Transform:
   m_ObjectHideFlags: 0
