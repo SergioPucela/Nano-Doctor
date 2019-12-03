@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 522}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -45,7 +45,7 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 781
-  m_MinSize: {x: 950, y: 544}
+  m_MinSize: {x: 950, y: 522}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -112,10 +112,10 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 613, y: 494}
-  m_MaxSize: {x: 18008, y: 14044}
+  m_MinSize: {x: 613, y: 472}
+  m_MaxSize: {x: 18008, y: 14022}
   vertical: 0
-  controlID: 19447
+  controlID: 575
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -137,10 +137,10 @@ MonoBehaviour:
     y: 0
     width: 323
     height: 731
-  m_MinSize: {x: 232, y: 494}
-  m_MaxSize: {x: 10002, y: 14044}
+  m_MinSize: {x: 232, y: 472}
+  m_MaxSize: {x: 10002, y: 14022}
   vertical: 1
-  controlID: 19427
+  controlID: 642
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_MinSize: {x: 104, y: 244}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 19448
+  controlID: 576
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -410,9 +410,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: c02b0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 264cffff3052ffff9e54ffff0e5affff1e5cffffc861ffff8a6fffff5074ffff847fffffa285ffffd687ffff988cfffffe93ffff5a94ffff2a9fffff2eb8ffff18c6ffffc6caffff645b00005e7200007eb800000cc1000054530100
+      m_ExpandedIDs: d0faffff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -475,20 +475,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Administrador\Documents\GitHub\Nano-Doctor\Nano Doctor
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 259}
-    m_SelectedIDs: 06550000
-    m_LastClickedID: 21766
-    m_ExpandedIDs: 00000000264f0000e24f0000c6500000be510000e4510000385200007054000000ca9a3b
+    scrollPos: {x: 0, y: 275}
+    m_SelectedIDs: 0e360000
+    m_LastClickedID: 13838
+    m_ExpandedIDs: 000000004e310000fa320000cc34000080360000ca36000054370000643b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,7 +516,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000264f0000e24f0000c6500000be510000e4510000385200007054000000ca9a3b
+    m_ExpandedIDs: 000000004e310000fa320000cc34000080360000ca36000054370000643b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -568,7 +568,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 71}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 112
@@ -608,9 +608,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 621.60504, y: 366.18542, z: -401.75}
+    m_Target: {x: -0.11392295, y: 21.827866, z: -492.02878}
     speed: 2
-    m_Value: {x: 621.60504, y: 366.18542, z: -401.75}
+    m_Value: {x: -0.11392295, y: 21.827866, z: -492.02878}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -643,9 +643,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1088.8933
+    m_Target: 65.49765
     speed: 2
-    m_Value: 1088.8933
+    m_Value: 65.49765
   m_Ortho:
     m_Target: 1
     speed: 2

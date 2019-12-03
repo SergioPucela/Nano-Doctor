@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator blackScreen;
 
     public bool thisLevelOne;
+    public bool playerIsDead = false;
 
     void Awake()
     {
@@ -41,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (dialogHasStarted)
+        if (dialogHasStarted || playerIsDead)
             moveInput = 0;
         else
             moveInput = Input.GetAxis("Horizontal");
@@ -164,6 +165,7 @@ public class PlayerMovement : MonoBehaviour
 
     IEnumerator Die()
     {
+        playerIsDead = true;
         input.enabled = false;
         blackScreen.SetTrigger("FadeOut");
         //Aquí hago que el booleano que controlas en animator sea true
