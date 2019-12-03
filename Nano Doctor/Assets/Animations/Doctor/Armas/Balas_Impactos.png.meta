@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: 8737804162214036174
     second: Balas_3
+  - first:
+      213: -7089077934751319430
+    second: SpriteVacio
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -273,6 +276,27 @@ TextureImporter:
       bones: []
       spriteID: 9719a5916421e2e4399b9ae98fa9865f
       internalID: 8737804162214036174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteVacio
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 2
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b5539ae67b9a343ac0a35dbafa789f
+      internalID: -7089077934751319430
       vertices: []
       indices: 
       edges: []
