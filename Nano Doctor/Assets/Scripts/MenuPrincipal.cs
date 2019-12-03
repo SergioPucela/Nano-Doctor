@@ -6,20 +6,31 @@ using UnityEngine.SceneManagement;
 public class MenuPrincipal : MonoBehaviour
 {
 
-    public void Quit()
+    public Animator animator;
+
+    IEnumerator TransitionQuit()
     {
+        animator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1f);
         Debug.Log("Has salido del juego correctamente.");
         Application.Quit();
     }
 
-    public void goToTestScene()
+    IEnumerator TransitionStart()
     {
-        SceneManager.LoadScene("TestScene");
+        animator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Nivel1");
+    }
+
+    public void Quit()
+    {
+        StartCoroutine(TransitionQuit());
     }
 
     public void goToLevelOne()
     {
-        SceneManager.LoadScene("Nivel1");
+        StartCoroutine(TransitionStart());
     }
 
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -27,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     private bool falling;
     private bool jumping;
+
+    public PlayerInput input;
+    public Animator blackScreen;
+
+    public bool thisLevelOne;
 
     void Awake()
     {
@@ -132,6 +138,11 @@ public class PlayerMovement : MonoBehaviour
         {
             RecibirDaño(3);
         }
+
+        if (collision.gameObject.CompareTag("TriggerNextLevel"))
+        {
+            StartCoroutine(NextLevel());
+        }
     }
 
     public void RecibirDaño(int damage)
@@ -140,13 +151,27 @@ public class PlayerMovement : MonoBehaviour
 
         if(health <= 0)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
-    void Die()
+    IEnumerator NextLevel()
     {
-        //Aquí puedo poner el efecto de muerte
+        blackScreen.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("Bossfight Lvl1");
+    }
+
+    IEnumerator Die()
+    {
+        input.enabled = false;
+        blackScreen.SetTrigger("FadeOut");
+        //Aquí hago que el booleano que controlas en animator sea true
         Debug.Log("Has muerto");
+        yield return new WaitForSeconds(1f);
+        if(thisLevelOne)
+            SceneManager.LoadScene("Nivel1");
+        else
+            SceneManager.LoadScene("Bossfight Lvl1");
     }
 }

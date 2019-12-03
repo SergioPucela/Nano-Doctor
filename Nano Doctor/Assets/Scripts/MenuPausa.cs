@@ -11,6 +11,8 @@ public class MenuPausa : MonoBehaviour
     public GameObject pauseMenuUI;
     public PlayerInput player;
 
+    public Animator animator;
+
     // Update is called once per frame
     void Update()
     {
@@ -39,9 +41,16 @@ public class MenuPausa : MonoBehaviour
         isPaused = true;
     }
 
-    public void CargarMenu()
+    IEnumerator TransitionMenu()
     {
         Time.timeScale = 1f;
+        animator.SetTrigger("FadeOut");
+        yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("MenuPrincipal");
+    }
+
+    public void CargarMenu()
+    {
+        StartCoroutine(TransitionMenu());
     }
 }
