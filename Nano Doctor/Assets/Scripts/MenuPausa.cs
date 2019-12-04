@@ -44,6 +44,7 @@ public class MenuPausa : MonoBehaviour
     IEnumerator TransitionMenu()
     {
         Time.timeScale = 1f;
+        pauseMenuUI.SetActive(false);
         animator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("MenuPrincipal");
