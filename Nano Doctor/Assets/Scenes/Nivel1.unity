@@ -2335,7 +2335,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1800397404}
     - target: {fileID: 6836025098583381008, guid: 4d206c4862694fb45bfe0d917e7c753c,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -3125,6 +3125,7 @@ MonoBehaviour:
   input: {fileID: 0}
   blackScreen: {fileID: 0}
   thisLevelOne: 0
+  playerIsDead: 0
 --- !u!114 &301933827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12999,6 +13000,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9072cb52315cf945ba9e8314146d840, type: 3}
+--- !u!114 &1800397404 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5358764206056648318, guid: e9072cb52315cf945ba9e8314146d840,
+    type: 3}
+  m_PrefabInstance: {fileID: 1800397403}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 178a4099abb62764182a4fb17f4e9af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1807290734
 GameObject:
   m_ObjectHideFlags: 3
