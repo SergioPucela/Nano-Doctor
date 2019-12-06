@@ -167,6 +167,8 @@ public class PlayerMovement : MonoBehaviour
     {
         playerIsDead = true;
         input.enabled = false;
+        animator.SetBool("boolDead", playerIsDead);
+        animator.SetTrigger("isDead");
         blackScreen.SetTrigger("FadeOut");
         //Aquí hago que el booleano que controlas en animator sea true
         Debug.Log("Has muerto");
