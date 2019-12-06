@@ -6,6 +6,7 @@ public class JefeFuegoBullet : MonoBehaviour
 {
 
     public float speed;
+    public int bossDamage;
 
     private Transform player;
     private Vector2 target;
@@ -25,5 +26,15 @@ public class JefeFuegoBullet : MonoBehaviour
 
         if (transform.position.x == target.x && transform.position.y == target.y)
             Destroy(gameObject);
+    }
+
+    void OnTriggerEnter2D(Collider2D collisionInfo)
+    {
+        if (collisionInfo.gameObject.CompareTag("Player"))
+        {
+            PlayerMovement myPlayer = collisionInfo.GetComponent<PlayerMovement>();
+            myPlayer.RecibirDaño(bossDamage);
+            Destroy(gameObject);
+        }
     }
 }

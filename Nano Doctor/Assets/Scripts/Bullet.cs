@@ -15,14 +15,20 @@ public class Bullet : MonoBehaviour
     {
         rb.velocity = transform.right * bulletSpeed;
         Physics2D.IgnoreLayerCollision(10, 11);
+        Physics2D.IgnoreLayerCollision(10, 12);
     }
 
     void OnTriggerEnter2D(Collider2D collisionInfo)
     {
         Enemigo enemigo = collisionInfo.GetComponent<Enemigo>();
+        JefeFuego jefeFuego = collisionInfo.GetComponent<JefeFuego>();
         if(enemigo != null)
         {
             enemigo.TakeDamage(damage);
+        }
+        else if (jefeFuego != null)
+        {
+            jefeFuego.bossTakeDamage(damage);
         }
         Instantiate(impactEffect, transform.position, transform.rotation);
         Debug.Log(collisionInfo.name);

@@ -144,6 +144,11 @@ public class PlayerMovement : MonoBehaviour
         {
             StartCoroutine(NextLevel());
         }
+
+        if (collision.gameObject.CompareTag("Boss"))
+        {
+            RecibirDaño(1);
+        }
     }
 
     public void RecibirDaño(int damage)
@@ -170,7 +175,6 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("boolDead", playerIsDead);
         animator.SetTrigger("isDead");
         blackScreen.SetTrigger("FadeOut");
-        //Aquí hago que el booleano que controlas en animator sea true
         Debug.Log("Has muerto");
         yield return new WaitForSeconds(1f);
         if(thisLevelOne)

@@ -27,17 +27,25 @@ public class ArmaLaser : MonoBehaviour
 
             if (collisionInfo)
             {
-                Debug.Log(collisionInfo.transform.name);
-                Enemigo enemigo = collisionInfo.transform.GetComponent<Enemigo>();
-                if (enemigo != null)
+                if (collisionInfo.transform.tag == "Trigger")
                 {
-                    enemigo.TakeDamage(damage);
+                    lineRenderer.SetPosition(0, firePoint.position);
+                    lineRenderer.SetPosition(1, firePoint.position + firePoint.right * 100);
                 }
+                else
+                {
+                    Debug.Log(collisionInfo.transform.name);
+                    Enemigo enemigo = collisionInfo.transform.GetComponent<Enemigo>();
+                    if (enemigo != null)
+                    {
+                        enemigo.TakeDamage(damage);
+                    }
 
-                //Instanciar aquí efectos visuales de impacto del láser
+                    //Instanciar aquí efectos visuales de impacto del láser
 
-                lineRenderer.SetPosition(0, firePoint.position);
-                lineRenderer.SetPosition(1, collisionInfo.point);
+                    lineRenderer.SetPosition(0, firePoint.position);
+                    lineRenderer.SetPosition(1, collisionInfo.point);
+                }
             }
             else //En caso de que el laser no choque con nada, damos la impresión de que sigue hasta el infinito
             {
