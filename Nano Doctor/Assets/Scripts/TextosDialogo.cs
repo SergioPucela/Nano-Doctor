@@ -5,5 +5,5 @@ using UnityEngine;
 public class TextosDialogo : MonoBehaviour
 {
     public string[] sentences;
-
+    public string NPC_Name;
 }

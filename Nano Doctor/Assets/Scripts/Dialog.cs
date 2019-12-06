@@ -7,6 +7,8 @@ public class Dialog : MonoBehaviour
 {
 
     public TextMeshProUGUI textDisplay;
+    public TextMeshProUGUI nameDisplay;
+    public string NPC_Name;
     public string[] sentences;
     public int index;
     public float typingSpeed;
@@ -15,6 +17,7 @@ public class Dialog : MonoBehaviour
     public bool dialogEnd = false;
 
     public GameObject continueButton;
+    public GameObject dialogBox;
 
     void Update()
     {
@@ -53,6 +56,7 @@ public class Dialog : MonoBehaviour
                 EnemigoVolador AI = enemy.GetComponent<EnemigoVolador>();
                 AI.enemyView = 15f;
             }
+            dialogBox.SetActive(false);
             Input.enabled = true;
             index = 0;
             dialogEnd = true;
@@ -66,6 +70,8 @@ public class Dialog : MonoBehaviour
             EnemigoVolador AI = enemy.GetComponent<EnemigoVolador>();
             AI.enemyView = 0.01f;
         }
+        dialogBox.SetActive(true);
+        nameDisplay.text = NPC_Name;
         Input.enabled = false;
         StartCoroutine(Type());
     }

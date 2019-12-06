@@ -126,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
             trigger = collision.gameObject;
             TextosDialogo myText = collision.gameObject.GetComponent<TextosDialogo>();
             myDialog.sentences = myText.sentences;
+            myDialog.NPC_Name = myText.NPC_Name;
             myDialog.DialogStart();
         }
 
