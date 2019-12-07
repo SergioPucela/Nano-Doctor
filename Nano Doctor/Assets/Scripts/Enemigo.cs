@@ -7,6 +7,9 @@ public class Enemigo : MonoBehaviour
 
     public int health;
     public int enemyDamage;
+    public bool isDead = false;
+
+    public Animator animator;
 
     public void TakeDamage(int damage)
     {
@@ -14,13 +17,15 @@ public class Enemigo : MonoBehaviour
 
         if(health <= 0)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
-    void Die()
+    IEnumerator Die()
     {
-        //Aquí puedo poner el efecto de muerte
+        isDead = true;
+        animator.SetTrigger("enemyIsDead");
+        yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
 
@@ -29,7 +34,7 @@ public class Enemigo : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.gameObject.GetComponent<PlayerMovement>().RecibirDaño(enemyDamage);
-            Die();
+            StartCoroutine(Die());
         }
     }
 }

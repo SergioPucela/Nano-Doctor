@@ -20,9 +20,20 @@ public class EnemigoVolador : Enemigo
     // Update is called once per frame
     void Update()
     {
-        if (Vector2.Distance(enemy.position, player.transform.position) <= enemyView)
-            AI.enabled = true;
-        else if (Vector2.Distance(enemy.position, player.transform.position) > enemyView)
+        if (isDead)
+        {
+            AI.speed = 0f;
             AI.enabled = false;
+        }
+        if (Vector2.Distance(enemy.position, player.transform.position) <= enemyView)
+        {
+            AI.speed = 400f;
+            AI.enabled = true;
+        }
+        else if (Vector2.Distance(enemy.position, player.transform.position) > enemyView)
+        {
+            AI.speed = 0f;
+            AI.enabled = false;
+        }
     }
 }

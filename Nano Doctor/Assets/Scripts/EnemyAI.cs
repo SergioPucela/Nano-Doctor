@@ -40,7 +40,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (path == null)
             return;
-
+        
         if(currentWaypoint >= path.vectorPath.Count)
         {
             reachedEndOfPath = true;
