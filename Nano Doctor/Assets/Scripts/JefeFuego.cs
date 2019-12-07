@@ -44,13 +44,18 @@ public class JefeFuego : MonoBehaviour
             startTimeBtwShots = 0.7f;
 
         if (health <= 0)
+        {
+            timeBtwShots = 9f;
+            startTimeBtwShots = 9f;
             StartCoroutine(bossDie());
+        }
     }
 
     public IEnumerator bossDie()
     {
         Debug.Log("Has ganado!");
         animator.SetBool("bossDead", true); //La idle será su animación de muerte ya que aquí no tiene ojo
+        yield return new WaitForSeconds(1.5f);
         blackScreen.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("MenuPrincipal");
