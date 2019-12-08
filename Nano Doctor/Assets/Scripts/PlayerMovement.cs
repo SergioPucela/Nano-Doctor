@@ -73,6 +73,8 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         else if (faceRight == true && moveInput > 0)
             Flip();
+
+        Debug.Log(canJump);
     }
 
     void Update()

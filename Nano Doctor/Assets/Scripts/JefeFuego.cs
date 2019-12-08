@@ -40,7 +40,7 @@ public class JefeFuego : MonoBehaviour
     {
         health -= damage;
 
-        if(health <= 10)
+        if(health <= 15)
             startTimeBtwShots = 0.7f;
 
         if (health <= 0)
