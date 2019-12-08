@@ -113,7 +113,7 @@ MonoBehaviour:
   m_MinSize: {x: 613, y: 472}
   m_MaxSize: {x: 18008, y: 14022}
   vertical: 1
-  controlID: 12192
+  controlID: 2893
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 613, y: 472}
   m_MaxSize: {x: 18008, y: 14022}
   vertical: 0
-  controlID: 12193
+  controlID: 2894
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 472}
   m_MaxSize: {x: 10002, y: 14022}
   vertical: 1
-  controlID: 12157
+  controlID: 2865
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_MinSize: {x: 104, y: 244}
   m_MaxSize: {x: 4004, y: 8044}
   vertical: 1
-  controlID: 12194
+  controlID: 2895
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -436,7 +436,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 8ef8ffff6afbffff60460000
+      m_ExpandedIDs: 6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -499,20 +499,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Escenarios y frames/BossFuego
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/Escenarios y frames/BossFuego
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Administrador\Documents\GitHub\Nano-Doctor\Nano Doctor
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 5a310000
-    m_LastClickedID: 12634
-    m_ExpandedIDs: 000000005a31000014330000e634000090360000d43600005c370000623b00007c3c000000ca9a3b
+    m_SelectedIDs: fe360000
+    m_LastClickedID: 14078
+    m_ExpandedIDs: 000000005a3100007c32000014330000e634000090360000d43600005e3700006c3b0000863c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -540,7 +540,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005a31000014330000e634000090360000d43600005c370000623b00007c3c000000ca9a3b
+    m_ExpandedIDs: 000000005a31000014330000e634000090360000d43600005e3700006c3b0000863c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -632,9 +632,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 5.0456586, y: 2.0454206, z: -14.829687}
+    m_Target: {x: 2.0033238, y: 5.9949584, z: -64.4375}
     speed: 2
-    m_Value: {x: 5.0456586, y: 2.0454206, z: -14.829687}
+    m_Value: {x: 2.0033238, y: 5.9949584, z: -64.4375}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -667,9 +667,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 41.77529
+    m_Target: 35.45475
     speed: 2
-    m_Value: 41.77529
+    m_Value: 35.45475
   m_Ortho:
     m_Target: 1
     speed: 2
