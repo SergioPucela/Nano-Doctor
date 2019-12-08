@@ -73,8 +73,6 @@ public class PlayerMovement : MonoBehaviour
             Flip();
         else if (faceRight == true && moveInput > 0)
             Flip();
-
-        Debug.Log(canJump);
     }
 
     void Update()
@@ -129,6 +127,7 @@ public class PlayerMovement : MonoBehaviour
             TextosDialogo myText = collision.gameObject.GetComponent<TextosDialogo>();
             myDialog.sentences = myText.sentences;
             myDialog.NPC_Name = myText.NPC_Name;
+            myDialog.endTutorial = myText.endOfTutorial;
             myDialog.DialogStart();
         }
 

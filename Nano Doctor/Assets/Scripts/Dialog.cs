@@ -19,6 +19,9 @@ public class Dialog : MonoBehaviour
     public GameObject continueButton;
     public GameObject dialogBox;
 
+    public bool endTutorial;
+    public GameObject KLT;
+
     void Update()
     {
         if (textDisplay.text == sentences[index])
@@ -51,6 +54,8 @@ public class Dialog : MonoBehaviour
 
         if (index >= sentences.Length - 1 && textDisplay.text == "")
         {
+            if (endTutorial)
+                Destroy(KLT);
             foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("EnemyAI"))
             {
                 EnemigoVolador AI = enemy.GetComponent<EnemigoVolador>();

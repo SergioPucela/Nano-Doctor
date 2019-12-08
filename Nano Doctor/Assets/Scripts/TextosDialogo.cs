@@ -6,4 +6,6 @@ public class TextosDialogo : MonoBehaviour
 {
     public string[] sentences;
     public string NPC_Name;
+
+    public bool endOfTutorial;
 }
