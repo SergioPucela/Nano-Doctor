@@ -11314,12 +11314,12 @@ PrefabInstance:
     - target: {fileID: 9214790197770106901, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26.03714
+      value: -24.43
       objectReference: {fileID: 0}
     - target: {fileID: 9214790197770106901, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.7042758
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 9214790197770106901, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
@@ -11364,6 +11364,41 @@ PrefabInstance:
     - target: {fileID: 9214790197770106901, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214790197770106891, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214790197770106891, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 5.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214790197770106892, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214790197770106892, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -3.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214790197770106892, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214790197770106895, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214790197770106895, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_Offset.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
