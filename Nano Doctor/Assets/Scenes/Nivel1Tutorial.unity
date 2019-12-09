@@ -514,7 +514,6 @@ Transform:
   - {fileID: 2049538829}
   - {fileID: 265844115}
   - {fileID: 2135024248}
-  - {fileID: 1645009830}
   m_Father: {fileID: 1234948645}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4274,7 +4273,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: c8b38190e28baee45be06ba15236f62f, type: 3}
 --- !u!4 &495354117 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4330884987347560718, guid: c8b38190e28baee45be06ba15236f62f,
+  m_CorrespondingSourceObject: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
     type: 3}
   m_PrefabInstance: {fileID: 495354116}
   m_PrefabAsset: {fileID: 0}
@@ -5872,12 +5871,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b38190e28baee45be06ba15236f62f, type: 3}
---- !u!4 &807985820 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4330884987347560718, guid: c8b38190e28baee45be06ba15236f62f,
-    type: 3}
-  m_PrefabInstance: {fileID: 807985819}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &814640496 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3268288845042590216, guid: 2aa1201fc65124643944b57e5780ae8d,
@@ -7535,7 +7528,7 @@ Transform:
   m_LocalPosition: {x: 0.2871406, y: -1.4442759, z: -7.267578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 807985820}
+  - {fileID: 1993642357}
   - {fileID: 1745251998}
   - {fileID: 381334062}
   - {fileID: 1242549196}
@@ -10875,104 +10868,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1645009829
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1645009830}
-  - component: {fileID: 1645009833}
-  - component: {fileID: 1645009832}
-  - component: {fileID: 1645009831}
-  m_Layer: 11
-  m_Name: Bosstrigger
-  m_TagString: Trigger
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1645009830
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645009829}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 344.15, y: -2.8, z: 231.05368}
-  m_LocalScale: {x: 1, y: 6.7961164, z: 1}
-  m_Children: []
-  m_Father: {fileID: 80162822}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1645009831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645009829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e2bb1293e8998543bfe35d092f998bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sentences:
-  - "\xBFNo huele un poco a quemado?"
-  - "\xA1JAJAJAJAJAJA!"
-  - Baja si quieres sufrir el mismo destino que el bosque...
-  NPC_Name: Fuego
-  endOfTutorial: 0
---- !u!61 &1645009832
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645009829}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!50 &1645009833
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645009829}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1674047119
 GameObject:
   m_ObjectHideFlags: 0
@@ -13205,6 +13100,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1978261207}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1993642357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
+    type: 3}
+  m_PrefabInstance: {fileID: 807985819}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2005198357
 GameObject:
   m_ObjectHideFlags: 0
@@ -14376,11 +14277,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 314957423}
     m_Modifications:
-    - target: {fileID: 1662499050271571828, guid: cfa5655e6810aba409c630cbc39c2bb3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1662499048598877983, guid: cfa5655e6810aba409c630cbc39c2bb3,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -14392,6 +14288,11 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1662499048802904959, guid: cfa5655e6810aba409c630cbc39c2bb3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662499050271571828, guid: cfa5655e6810aba409c630cbc39c2bb3,
         type: 3}
       propertyPath: m_IsActive
       value: 0
