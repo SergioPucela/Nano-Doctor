@@ -763,7 +763,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -997
+  m_SortingOrder: 990
   m_Sprite: {fileID: 21300000, guid: cfc845a8e20a89b4c995e8475c1a059d, type: 3}
   m_Color: {r: 0.9273676, g: 0.9622642, b: 0, a: 1}
   m_FlipX: 0
@@ -3120,7 +3120,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -997
+  m_SortingOrder: 990
   m_Sprite: {fileID: 21300000, guid: cfc845a8e20a89b4c995e8475c1a059d, type: 3}
   m_Color: {r: 0.9273676, g: 0.9622642, b: 0, a: 1}
   m_FlipX: 0
@@ -3165,7 +3165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTimeBtwShots: 1.5
-  proyectil: {fileID: 3418966577726855297, guid: ef6c18e2ac93c134fbe0ef1899d5086c,
+  proyectil: {fileID: 634109394101553153, guid: ef6c18e2ac93c134fbe0ef1899d5086c,
     type: 3}
   blackScreen: {fileID: 1982100930}
   animator: {fileID: 2059467158}
@@ -3316,6 +3316,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CanvasDialogos
       objectReference: {fileID: 0}
+    - target: {fileID: 1662499050271571828, guid: cfa5655e6810aba409c630cbc39c2bb3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1662499048598877983, guid: cfa5655e6810aba409c630cbc39c2bb3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3419,11 +3424,6 @@ PrefabInstance:
     - target: {fileID: 1662499048598877983, guid: cfa5655e6810aba409c630cbc39c2bb3,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1662499050271571828, guid: cfa5655e6810aba409c630cbc39c2bb3,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1662499048802904945, guid: cfa5655e6810aba409c630cbc39c2bb3,

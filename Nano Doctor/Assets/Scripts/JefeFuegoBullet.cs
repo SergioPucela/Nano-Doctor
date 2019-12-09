@@ -11,6 +11,8 @@ public class JefeFuegoBullet : MonoBehaviour
     private Transform player;
     private Vector2 target;
 
+    public GameObject impactEffect;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +34,7 @@ public class JefeFuegoBullet : MonoBehaviour
     {
         if (collisionInfo.gameObject.CompareTag("Player"))
         {
+            Instantiate(impactEffect, transform.position, transform.rotation);
             PlayerMovement myPlayer = collisionInfo.GetComponent<PlayerMovement>();
             myPlayer.RecibirDaño(bossDamage);
             Destroy(gameObject);

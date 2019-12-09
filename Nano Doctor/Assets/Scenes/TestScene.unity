@@ -946,6 +946,7 @@ MonoBehaviour:
   damage: 10
   cargador: 0
   animator: {fileID: 0}
+  laserImpact: {fileID: 0}
 --- !u!114 &301933829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -969,6 +970,8 @@ MonoBehaviour:
   dialogEnd: 0
   continueButton: {fileID: 0}
   dialogBox: {fileID: 0}
+  endTutorial: 0
+  KLT: {fileID: 0}
 --- !u!1 &332063007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,6 +1424,7 @@ MonoBehaviour:
   - 'NPC: Todo funciona bien'
   - 'NPC: Hasta luego!'
   NPC_Name: 
+  endOfTutorial: 0
 --- !u!61 &394588697
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2624,18 +2628,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 508597870}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &730054703 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9214790197770106901, guid: c8b38190e28baee45be06ba15236f62f,
-    type: 3}
-  m_PrefabInstance: {fileID: 9214790197375760442}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &730054708 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 9214790197770106894, guid: c8b38190e28baee45be06ba15236f62f,
-    type: 3}
-  m_PrefabInstance: {fileID: 9214790197375760442}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &801879263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3209,6 +3201,12 @@ Transform:
   m_Father: {fileID: 301933825}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &991606180 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4330884987347560718, guid: c8b38190e28baee45be06ba15236f62f,
+    type: 3}
+  m_PrefabInstance: {fileID: 9214790197375760442}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1007748860
 GameObject:
   m_ObjectHideFlags: 0
@@ -3595,6 +3593,7 @@ MonoBehaviour:
   - Muy buenas!
   - El sistema funciona!
   NPC_Name: NPC
+  endOfTutorial: 0
 --- !u!61 &1111143777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3738,7 +3737,7 @@ Transform:
   - {fileID: 1422926317}
   - {fileID: 426300375}
   - {fileID: 1750078928}
-  - {fileID: 730054703}
+  - {fileID: 991606180}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4667,7 +4666,7 @@ MonoBehaviour:
   health: 3
   enemyDamage: 1
   isDead: 0
-  animator: {fileID: 730054708}
+  animator: {fileID: 0}
   enemy: {fileID: 0}
   player: {fileID: 1020403648}
   AI: {fileID: 0}
@@ -4891,6 +4890,7 @@ MonoBehaviour:
   - Significa que todo va perfetamente
   - BIEN!
   NPC_Name: 
+  endOfTutorial: 0
 --- !u!61 &1828130301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5620,10 +5620,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1168411294}
     m_Modifications:
-    - target: {fileID: 9214790197770106900, guid: c8b38190e28baee45be06ba15236f62f,
+    - target: {fileID: 4330884987347560718, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
-      propertyPath: m_Name
-      value: EnemigoPatrulla
+      propertyPath: m_LocalPosition.y
+      value: 2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330884987347560718, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4330884987347560718, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.64
       objectReference: {fileID: 0}
     - target: {fileID: 9214790197770106901, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
@@ -5679,6 +5689,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9214790197770106900, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_Name
+      value: EnemigoPatrulla
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b38190e28baee45be06ba15236f62f, type: 3}
