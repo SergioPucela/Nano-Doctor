@@ -12,6 +12,8 @@ public class ArmaLaser : MonoBehaviour
     private bool shooting = false;
     public Animator animator;
 
+    public GameObject laserImpact;
+
     void Update()
     {
         animator.SetBool("isShootingLaser", shooting);
@@ -27,7 +29,7 @@ public class ArmaLaser : MonoBehaviour
 
             if (collisionInfo)
             {
-                if (collisionInfo.transform.tag == "Trigger")
+                if (collisionInfo.transform.tag == "Trigger") //Si hay un trigger, dar la impresión de que lo atraviesa
                 {
                     lineRenderer.SetPosition(0, firePoint.position);
                     lineRenderer.SetPosition(1, firePoint.position + firePoint.right * 100);
@@ -41,7 +43,7 @@ public class ArmaLaser : MonoBehaviour
                         enemigo.TakeDamage(damage);
                     }
 
-                    //Instanciar aquí efectos visuales de impacto del láser
+                    Instantiate(laserImpact, collisionInfo.point, Quaternion.identity);
 
                     lineRenderer.SetPosition(0, firePoint.position);
                     lineRenderer.SetPosition(1, collisionInfo.point);

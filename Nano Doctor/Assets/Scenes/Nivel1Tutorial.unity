@@ -2493,6 +2493,7 @@ MonoBehaviour:
   damage: 10
   cargador: 0
   animator: {fileID: 0}
+  laserImpact: {fileID: 0}
 --- !u!114 &301933829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4201,12 +4202,12 @@ PrefabInstance:
     - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 31.489998
+      value: 31.39
       objectReference: {fileID: 0}
     - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.69
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
@@ -4252,6 +4253,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.32849163
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3361199
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.253456
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b38190e28baee45be06ba15236f62f, type: 3}
@@ -5786,12 +5802,12 @@ PrefabInstance:
     - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.8871405
+      value: -4.162
       objectReference: {fileID: 0}
     - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.8742759
+      value: 1.646
       objectReference: {fileID: 0}
     - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
         type: 3}
@@ -5837,6 +5853,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -0.32849163
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3361199
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484026159457157019, guid: c8b38190e28baee45be06ba15236f62f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.253456
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8b38190e28baee45be06ba15236f62f, type: 3}
@@ -11896,6 +11927,12 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 458915514}
+    - target: {fileID: 5358764206056648315, guid: e9072cb52315cf945ba9e8314146d840,
+        type: 3}
+      propertyPath: laserImpact
+      value: 
+      objectReference: {fileID: 3307533263368083027, guid: 26ec9014665227d4c9f6b4fb97062afd,
+        type: 3}
     - target: {fileID: 5358764206056648314, guid: e9072cb52315cf945ba9e8314146d840,
         type: 3}
       propertyPath: animator
@@ -13349,7 +13386,13 @@ MonoBehaviour:
     estado de salud en todo momento."
   - "Entrar en contacto con un enemigo har\xE1 que pierdas salud. \xA1Que no baje
     a cero!"
-  - "Podr\xE1s acabar con los enemigos haciendo click izquierdo para disparar tu arma."
+  - "Podr\xE1s acabar con los enemigos haciendo click izquierdo para disparar tu arma,
+    pero ten cuidado..."
+  - "Mis an\xE1lisis est\xE1n detectando altos niveles de toxina en las ramas de su
+    cabeza."
+  - Acaba con ellos o pasalos por encima, pero no pienses en aplastar su cabeza como
+    cierto fontanero.
+  - "Las posibilidades de recibir el doble o el triple de da\xF1o son muy elevadas..."
   NPC_Name: KTL
   endOfTutorial: 0
 --- !u!61 &2049538831
@@ -14234,11 +14277,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 314957423}
     m_Modifications:
-    - target: {fileID: 1662499050271571828, guid: cfa5655e6810aba409c630cbc39c2bb3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1662499048598877983, guid: cfa5655e6810aba409c630cbc39c2bb3,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -14250,6 +14288,11 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1662499048802904959, guid: cfa5655e6810aba409c630cbc39c2bb3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662499050271571828, guid: cfa5655e6810aba409c630cbc39c2bb3,
         type: 3}
       propertyPath: m_IsActive
       value: 0
