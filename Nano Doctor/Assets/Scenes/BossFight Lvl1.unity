@@ -521,8 +521,6 @@ MonoBehaviour:
   dialogEnd: 0
   continueButton: {fileID: 0}
   dialogBox: {fileID: 0}
-  endTutorial: 0
-  KLT: {fileID: 0}
 --- !u!114 &376623476 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1662499049363638685, guid: cfa5655e6810aba409c630cbc39c2bb3,
@@ -1532,7 +1530,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845218513}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.71, y: -0.91, z: 0}
+  m_LocalPosition: {x: 14.71, y: 0.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698668616}
@@ -3247,7 +3245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126329388}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.35, y: -0.91, z: 0}
+  m_LocalPosition: {x: -14.35, y: 0.79, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 698668616}
@@ -3264,11 +3262,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CanvasDialogos
-      objectReference: {fileID: 0}
-    - target: {fileID: 1662499050271571828, guid: cfa5655e6810aba409c630cbc39c2bb3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1662499048598877983, guid: cfa5655e6810aba409c630cbc39c2bb3,
         type: 3}
@@ -3373,6 +3366,11 @@ PrefabInstance:
     - target: {fileID: 1662499048598877983, guid: cfa5655e6810aba409c630cbc39c2bb3,
         type: 3}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662499050271571828, guid: cfa5655e6810aba409c630cbc39c2bb3,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1662499048802904945, guid: cfa5655e6810aba409c630cbc39c2bb3,
