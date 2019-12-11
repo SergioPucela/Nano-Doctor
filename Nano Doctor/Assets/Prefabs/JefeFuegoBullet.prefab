@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8608671200616248524}
   - component: {fileID: 6419396290636874042}
   - component: {fileID: 87747615470862979}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: JefeFuegoBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -191,6 +191,9 @@ MonoBehaviour:
   health: 3
   enemyDamage: 1
   isDead: 0
+  colliderCabeza: {fileID: 4330884988277659770}
+  colliderPies: {fileID: 4330884988277659771}
+  colliderCuerpo: {fileID: 4330884988277663620}
   animator: {fileID: 4330884988277663622}
   speed: 5
   rayDistance: 2

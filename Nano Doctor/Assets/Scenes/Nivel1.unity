@@ -9660,7 +9660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - "\xBFNo hueles ha quemado?"
+  - "\xBFNo hueles a quemado?"
   - "\xA1JAJAJAJAJAJAJA!"
   - Te estoy esperando Doctor.
   - Baja si quieres sufrir el mismo destino que el bosque...
@@ -10771,6 +10771,11 @@ PrefabInstance:
       propertyPath: thisLevelOne
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 637397073731768149, guid: e9072cb52315cf945ba9e8314146d840,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2153635a394034242b5fde9c694994a2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e9072cb52315cf945ba9e8314146d840, type: 3}
 --- !u!114 &1800397404 stripped
@@ -12265,14 +12270,8 @@ MonoBehaviour:
     estado de salud en todo momento."
   - "Entrar en contacto con un enemigo har\xE1 que pierdas salud. \xA1Que no baje
     a cero!"
-  - "Podr\xE1s acabar con los enemigos haciendo click izquierdo para disparar tu arma,
-    pero ten cuidado..."
-  - "Mis an\xE1lisis est\xE1n detectando altos niveles de toxina en las ramas de su
-    cabeza."
-  - Acaba con ellos o pasalos por encima, pero no pienses en aplastarlos como cierto
-    fontanero...
-  - "Las posibilidades de recibir el doble de da\xF1o son muy elevadas..."
-  - "Y cr\xE9eme, \xA1no querr\xE1s estar cerca cuando acabes con \xE9l!"
+  - "Podr\xE1s acabar con los enemigos haciendo click izquierdo para disparar tu arma."
+  - Y no pienses en aplastarlos como cierto fontanero...
   NPC_Name: KTL
   endOfTutorial: 0
 --- !u!61 &2049538831

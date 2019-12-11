@@ -8,8 +8,18 @@ public class Enemigo : MonoBehaviour
     public int health;
     public int enemyDamage;
     public bool isDead = false;
+    public BoxCollider2D colliderCabeza;
+    public BoxCollider2D colliderPies;
+    public CircleCollider2D colliderCuerpo;
 
     public Animator animator;
+
+    public Rigidbody2D rb2D;
+
+    void Start()
+    {
+        rb2D = GetComponent<Rigidbody2D>();
+    }
 
     public void TakeDamage(int damage)
     {
@@ -25,6 +35,10 @@ public class Enemigo : MonoBehaviour
     {
         isDead = true;
         animator.SetTrigger("enemyIsDead");
+        Destroy(rb2D);
+        Destroy(colliderCabeza);
+        Destroy(colliderPies);
+        Destroy(colliderCuerpo);
         yield return new WaitForSeconds(1f);
         Destroy(gameObject);
     }
