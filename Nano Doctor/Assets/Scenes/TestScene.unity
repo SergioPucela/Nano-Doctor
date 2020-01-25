@@ -409,7 +409,11 @@ MonoBehaviour:
   health: 3
   enemyDamage: 1
   isDead: 0
+  colliderCabeza: {fileID: 0}
+  colliderPies: {fileID: 0}
+  colliderCuerpo: {fileID: 0}
   animator: {fileID: 0}
+  rb2D: {fileID: 0}
 --- !u!61 &244856099
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1631,7 +1635,11 @@ MonoBehaviour:
   health: 3
   enemyDamage: 1
   isDead: 0
+  colliderCabeza: {fileID: 0}
+  colliderPies: {fileID: 0}
+  colliderCuerpo: {fileID: 0}
   animator: {fileID: 0}
+  rb2D: {fileID: 0}
   enemy: {fileID: 0}
   player: {fileID: 1020403648}
   AI: {fileID: 0}
@@ -2075,7 +2083,11 @@ MonoBehaviour:
   health: 3
   enemyDamage: 1
   isDead: 0
+  colliderCabeza: {fileID: 0}
+  colliderPies: {fileID: 0}
+  colliderCuerpo: {fileID: 0}
   animator: {fileID: 0}
+  rb2D: {fileID: 0}
 --- !u!61 &491382030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3392,7 +3404,11 @@ MonoBehaviour:
   health: 3
   enemyDamage: 1
   isDead: 0
+  colliderCabeza: {fileID: 0}
+  colliderPies: {fileID: 0}
+  colliderCuerpo: {fileID: 0}
   animator: {fileID: 0}
+  rb2D: {fileID: 0}
 --- !u!61 &1042681650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3956,7 +3972,11 @@ MonoBehaviour:
   health: 3
   enemyDamage: 1
   isDead: 0
+  colliderCabeza: {fileID: 0}
+  colliderPies: {fileID: 0}
+  colliderCuerpo: {fileID: 0}
   animator: {fileID: 0}
+  rb2D: {fileID: 0}
 --- !u!61 &1422926319
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4666,7 +4686,11 @@ MonoBehaviour:
   health: 3
   enemyDamage: 1
   isDead: 0
+  colliderCabeza: {fileID: 0}
+  colliderPies: {fileID: 0}
+  colliderCuerpo: {fileID: 0}
   animator: {fileID: 0}
+  rb2D: {fileID: 0}
   enemy: {fileID: 0}
   player: {fileID: 1020403648}
   AI: {fileID: 0}
