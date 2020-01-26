@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: ec7f2bd657949a54c9d249164c7a7fbf
   - enabled: 1
+    path: Assets/Scenes/Prologo.unity
+    guid: c2b01a96b16d4ec4aa8cf8e8df7f12d0
+  - enabled: 1
     path: Assets/Scenes/Nivel1Tutorial.unity
     guid: e69ec8b42e57230418bdbef95e6b4177
   - enabled: 1
@@ -17,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BossFight Lvl1.unity
     guid: b502adc137db3c4448d148b5c234659a
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: b0a8a5d564f981144aa91106e0fa8b70
   m_configObjects: {}

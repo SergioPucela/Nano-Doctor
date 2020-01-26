@@ -20,7 +20,7 @@ public class MenuPrincipal : MonoBehaviour
     {
         animator.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Nivel1Tutorial");
+        SceneManager.LoadScene("Prologo");
     }
 
     public void Quit()

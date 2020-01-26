@@ -58,6 +58,6 @@ public class JefeFuego : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         blackScreen.SetTrigger("FadeOut");
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("MenuPrincipal");
+        SceneManager.LoadScene("Ending");
     }
 }
