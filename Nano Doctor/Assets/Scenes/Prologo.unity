@@ -423,8 +423,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagenes:
-  - {fileID: 21300000, guid: 7b77e319c050c734b9f11b3ecfd17fc1, type: 3}
-  - {fileID: 21300000, guid: 626393c94259b3445b0dcf6d53fe2c92, type: 3}
+  - {fileID: 21300000, guid: 70adf6e0844aecd4fbc6e423d1b37ee3, type: 3}
+  - {fileID: 21300000, guid: 2e72229173be89642aeb9f5bc59bf7d2, type: 3}
+  - {fileID: 21300000, guid: 0668283552f2be9429ad9ee2d22eae56, type: 3}
+  - {fileID: 21300000, guid: 6e259d15f1e8de443b390baf46582074, type: 3}
+  - {fileID: 21300000, guid: b608b95caffa28d4d8a26922a4b84f19, type: 3}
+  - {fileID: 21300000, guid: 81019cc430b4b2e49a13f5dfdc4c4ba3, type: 3}
+  frameTime: 5
   animator: {fileID: 1854851489}
   miImagen: {fileID: 1637749183}
   Prologo: 1

@@ -10,7 +10,7 @@ public class Cutscene : MonoBehaviour
     public Sprite[] imagenes;
     int imagenActual;
 
-    float frameTime = 2.5f;
+    public float frameTime = 2.5f;
     float nextFrameTime = 1.0f;
 
     public Animator animator;
